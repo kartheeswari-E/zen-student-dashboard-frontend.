@@ -1,0 +1,112 @@
+.whole-activitiesques-container{
+    margin: 102px 0 0 201px;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: center;
+    text-align: center;
+    background: whitesmoke;
+}
+.question-enter-container{
+    width:650px;
+    background: white;
+  margin-top: 100px;
+  border: 1px solid rgb(75,13,186);
+  border-radius: 10px;
+  padding:10px;
+}
+.whole-content-container{
+    width:450px;
+}
+.Toggle-type{
+    color: rgb(42, 117, 136);
+width:630px;
+border-radius: 10px;
+display:flex;
+flex-direction: row;
+}
+.headind-your-activity{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+.toggle-button{
+margin-left: 490px;
+}
+.list-container{
+    border: 0.5px solid rgb(129, 132, 132);
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 500px;
+color: rgb(42, 117, 136);
+}
+.container{
+    margin-left: 50px;
+}
+.last-button Button{
+    border: 0.7px solid rgb(139,98,210);
+    margin:0 0 4px 4px;
+    color: white;
+    background: rgb(139,98,210);
+}
+.answ-container{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+margin-left: 201px;
+    margin-top: 102px;
+    padding: 50px;
+    background-color: whitesmoke;
+}
+.answ-containers{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+margin-left: 201px;
+    margin-top: 102px;
+    padding: 50px;
+    background-color: whitesmoke;
+}
+.main-container{
+    background-color:white;
+    margin-top: 30px;
+    height: 240px;
+    width: 600px;
+    border: solid 1px violet;
+    border-radius: 10px;
+    box-shadow: 3px 1px 1px 1px thistle;
+}
+.main-containers{
+    background-color:white;
+    margin-top: 30px;
+    height: 100px;
+    width: 600px;
+    /* border: solid 1px rgb(195, 0, 255); */
+    border-radius: 10px;
+    box-shadow: 3px 1px 1px 1px rgb(199, 139, 255);
+}
+.menu-tag{
+margin: 10px;
+}
+.name-container{
+    font-weight: 500;
+    font-size:20px;
+}
+.display-ques-container{
+    margin-top: 3px;
+    font-weight: 300;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+.ans-menu{
+    margin: 15px; 
+}
+.box-cont-ans{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid yellow;
+    margin: 10px 0 10px 0;
+}

@@ -1,0 +1,122 @@
+.code-whole-container{
+    margin:102px 0 0 205px;
+    background: whitesmoke;
+}
+.header-codes{
+    display: flex;
+    flex-direction: row;
+}
+.sub-codes{
+    margin-left: 30px;
+    height: 250px;
+    width: 700px;
+ 
+}
+.para{
+    font-size: small;
+    margin-top: 20px;
+}
+.header-codess{
+  margin: 35px 900px 0 0;
+  }
+.header-codes img{
+    margin-top: 36px;
+  height: 50px;
+}
+.whole-code-data-cont{
+    margin:0 0 0 205px;
+    display: flex;
+    flex-wrap:wrap;
+    margin-bottom:20px ;
+}
+.sub-code-cont{
+   height:120px;
+   width: 300px;
+   border: 1px solid violet;
+margin-left: 30px;
+border-radius: 10px;
+ background: white;
+ box-shadow: rgb(245, 196, 245) 1px 1px 3px 1px;
+ margin-top: 15px;
+}
+.head-code{
+    margin:10px;
+   
+}
+.heads-codee{
+    margin: 10px 0 0 10px;
+}
+.start{
+    width: 100px;
+    margin-left: 180px;
+    border:none;
+    color: white;
+    background-color: rgb(9, 126, 9);
+    border-radius: 5px;
+}
+.container-contain{
+    margin:112px 0 0 211px;
+    border: 1px black solid;
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    background: white;
+}
+.container-contain button{
+    width: 100px;
+    margin-left: 300px;
+    border: none;
+    background: rgb(23, 132, 23);
+    border-radius: 5px;
+   color: white;
+}
+.container-button{
+    margin-left: 350px;
+    border: none;
+    background: rgb(23, 132, 23);
+    border-radius: 5px;
+   color: white;
+}
+.containers-button{
+    width: 100px;
+    margin-left: 350px;
+    border: none;
+    background: rgb(23, 132, 23);
+    border-radius: 5px;
+   color: white;
+}
+.answer-box{
+    width: 500px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px black solid;
+    margin-top: 112px;
+    margin-right: 30px;
+    height: 200px;
+   margin-left: 50px;
+}
+.answers-box{
+    width: 500px;
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px black solid;
+  margin:40px 0 30px 210px;
+}
+.wraps{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
+.y{
+    font-size:larger;
+    font-weight: 600;
+}
+.a{
+    padding-left: 10px;
+}
+.f-container{
+    display: flex;
+    flex-direction: column;
+}
