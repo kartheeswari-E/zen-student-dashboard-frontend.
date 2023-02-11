@@ -21,7 +21,7 @@ function Navbar() {
         <p>Kartheeswari</p>
           </div>
           <div onClick={()=>settoggle(!toggle)} className='images'>
-          <AccountCircleIcon style={{}}/>
+          <AccountCircleIcon style={{"fontSize":"40px"}}/>
 {toggle?<div className='sub'><Subnav/></div>:""}
        
           </div>

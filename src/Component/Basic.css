@@ -51,15 +51,15 @@ body{
   .whole-nav{
     overflow: hidden;
   display: flex;
-  height: 100px;
+  height: 80px;
   width: 100%;
   flex-direction: row;
   flex-wrap: wrap;
-  left:14.5%;
-  position: fixed;
+  left:3%;
+  position:fixed;
   top:0;
   right: 0;
-  background: rgb(222, 246, 255);
+  background:rgb(249,251,253);
   border: 0.5px solid rgb(232, 232, 255);
   }
   .heading-nav{
@@ -70,7 +70,7 @@ body{
   .heading-nav h3{
     padding-left: 37px;
     font-size: 30px;
-    width: 100px; margin-top: 27.5px;
+    width: 100px; margin-top: 17.5px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
   .sub-whole-nav{
@@ -80,17 +80,16 @@ body{
   }
  
   .images{
-    margin-top: 16px;
-    height: 50px;
-   padding:24px 31px 31px 31px;
+   padding:18px 31px 31px 10px;
    cursor: pointer;
+   color: gainsboro;
   }
   .profile-name p{
-    margin-top: 27.5px;
-    font-size: 30px;
+    margin-top: 19.5px;
+    font-size: 20px;
+    margin-left: 230px;
   
   }
-  
   body{
     background-color:#f6f6f9;
   }
@@ -174,28 +173,37 @@ border-radius: 15px;
   
   
   /* sidebar */
-  .sidebar-container{
+
+   .sidebar-container{
     top: 0%;
     height: 100%;
     display:flex;
     position: fixed;
     flex-direction: column;
-    width: 200px;
-    color: black;
-    left: 0;
-    background: rgb(227, 245, 252);
-  }
+    width:150px;
+    color:rgb(99, 101, 118);
+    left: 0%;
+    overflow: hidden;
+    background:rgb(255,255,255);
+   }
+
+  
   .whole-top{
     display:flex ;
     flex-direction: row;
   }
   .head{
     margin: 10px;
+  
     /* transform: translateY(-10px); */
+  }
+  .head h3{
+    margin-top: 8px;
+     font-size: 15px; 
   }
   .logo img{
     margin: 10px;
-    height:40px;
+    height:30px;
   }
   .list-1{
     display: flex;
@@ -203,20 +211,37 @@ border-radius: 15px;
   }
   .list ul {
       list-style-type: none;
+      text-decoration: none;
+      
+  }
+  a{
+    text-decoration: none;
+    color:rgb(99, 101, 118);
+  }
+  a :hover{
+    color: rgb(75,13,186);
   }
   .list-name{
+    text-decoration-line: none;
     height:40px;
+    font-size: 13px;
+    margin-top: 5px;
+    text-decoration: none;
   
+  }
+  .logos :hover{
+    color: rgb(95, 2, 255);
   }
   .logos{
     margin: 10px;
     height:50px;
     transform: translatex(-27px);
+    cursor: pointer;
   }
   .list-1 li{
     transform: translate(-20px,10px);
   }
-  
+ 
   
   /* sub-navbar */
   .sub{

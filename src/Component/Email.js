@@ -9,6 +9,7 @@ import {
   import {useFormik} from "formik";
   import { TextField } from '@mui/material';
   import {useNavigate } from "react-router-dom";
+import { display } from '@mui/system';
 
 function Email() {
     const formValidationschema=yup.object({
@@ -58,10 +59,12 @@ function Email() {
  <div className='email-container'>
    
   <form onSubmit={handleSubmit}>
-     <div >
+     <div style={{"display":"flex","flexDirection":"column"}}>
+     <label>Email</label>
+       
   <TextField className='email-input'
        name='email'
-   label='email' 
+  
     onChange={handleChange} 
     value={values.email} 
     type="email"

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import home from './Images/Home.png'
 import hero from './Images/hero.png'
 import { Navigate, useNavigate } from "react-router-dom";
@@ -23,7 +23,7 @@ const formValidationschema = yup.object({
 function Home() {
 
   const navigate = useNavigate();
-
+const[data,setdata]=useState([])
   const { handleChange, handleBlur, errors, touched, values, handleSubmit } =
     useFormik({
       initialValues: {
@@ -35,6 +35,8 @@ function Home() {
         oldlist(values);
       },
     });
+
+    
   const oldlist = async (values) => {
     try {
       await fetch(`${process.env.REACT_APP_BASE_URL}/login`, {
@@ -46,13 +48,14 @@ function Home() {
         },
       }).then((res) => {
         if (res.status === 200) {
-          window.alert("successfull login");
-          navigate("/dashboard");
+          window.alert("sucessfull login");
+          navigate("/class");
+          window.localStorage.setItem("id",values.email);
         } else {
           console.log(res.status);
-          window.alert("email or password incorrect");
         }
       });
+      
     } catch (err) {
       console.log("error");
     }
@@ -81,10 +84,10 @@ function Home() {
           <div className="divider d-flex my-4" >
       
           </div>
-<label style={{"transform":"translate(196px,-30px)"}}>Email address</label>
+<label style={{"transform":"translate(196px,-40px)"}}>Email address</label>
 
 <TextField
-   style={{"width":"300px","marginLeft":"100px"}} 
+   style={{"width":"300px","marginLeft":"105px"}} 
               name="email"
               onChange={handleChange}
               onBlur={handleBlur}
@@ -94,7 +97,7 @@ function Home() {
               error={errors.email && touched.email}
               helperText={errors.email && touched.email ? errors.email : ""}
             />
-       <label style={{"transform":"translate(-300px,63px)","marginTop":"10px"}}>Password</label>
+       <label style={{"transform":"translate(-290px,55px)","marginTop":"10px"}}>Password</label>
             <TextField
    style={{"width":"300px" ,"margin":"40px 0 0 196px"}} 
               name="password"

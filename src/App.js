@@ -14,6 +14,7 @@ import Ctemp from './Component/Codekatta/Ctemp';
 import Webcatta from './Component/Webcatta/Webcatta';
 import Create from './Component/Create';
 import Adminlog from './Component/Admin/Adminlog';
+import Classtemp from './Component/Classtemp';
 function App() {
   return <>
   <Routes>
@@ -23,14 +24,15 @@ function App() {
  <Route path="/dashboard" element={<Template/> } />
  <Route path="/codekatta" element={<Codetemp/> } /> 
  <Route path='/api/password-reset/:id/:token' element={<Newpassword/>} />
- <Route path="/activities" element={<Activitiesques/>} /> 
- <Route path="/work" element={<Activites/>} /> 
+ {/* <Route path="/activities" element={<Activitiesques/>} /> 
+ <Route path="/work" element={<Activites/>} />  */}
  <Route path="/admin" element={<Admin/>} /> 
  <Route path="/adminlogin" element={<Adminlog/>} /> 
  <Route path="/task" element={<Task/>} /> 
   <Route path="/api/answer/:id" element={<Datas/> } />
   <Route path="/api/answer/:id" element={<Datas/> } />
   <Route path="/webcatta" element={<Webcatta/> } />
+  <Route path="/class" element={<Classtemp/>} />
   <Route path="/api/indexs/:id" element={<Ctemp/> } />
   <Route path="/create" element={<Create/> } />
 

@@ -26,7 +26,7 @@ function Sidebar() {
         <div className='logos'>
         <ComputerIcon/>
         </div>
-        <Link to={'/activities'}>
+        <Link to={'/class'}>
         <li className='list-name'>Activity</li></Link>
         </div>
         <div className='list-1'>

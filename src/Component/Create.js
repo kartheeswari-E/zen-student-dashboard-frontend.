@@ -37,7 +37,7 @@ password:yup.string().password()
       });
 const newlist=async(values)=>{
   try{
- await fetch(`${process.env.REACT_APP_BASE_URL}/user`,{
+ await fetch(`${process.env.REACT_APP_BASE_URL}/userfirst`,{
       method:'POST',
        body:JSON.stringify(values),
       headers:{
@@ -48,7 +48,7 @@ const newlist=async(values)=>{
      .then((res)=>{    
               if(res.status===201){
               window.alert("successfull register");
-                  navigate("/dashboard");
+                  navigate("/");
               }
             else{
     console.log(res.status)
@@ -87,12 +87,11 @@ const newlist=async(values)=>{
     <div className="divider d-flex my-4" >
 
     </div>
-<label style={{"transform":"translate(196px,-35px)"}}>Name</label>
+<label style={{"transform":"translate(196px,-40px)"}}>Name</label>
 
 
-<TextField  style={{"width":"300px","marginLeft":"151px"}} 
+<TextField  style={{"width":"300px","marginLeft":"156px"}} 
  name='name'
-label='name' 
     onChange={handleChange} 
     onBlur={handleBlur} 
     value={values.name} 
@@ -101,11 +100,11 @@ label='name'
     error={errors.name && touched.name}
     helperText={errors.name && touched.name?errors.name:"" }
     /> 
-     <label style={{"transform":"translate(-295px,63px)","marginTop":"10px"}}>Email</label>
+     <label style={{"transform":"translate(-295px,56px)","marginTop":"10px"}}>Email</label>
           
    
     <TextField style={{"width":"300px" ,"margin":"40px 0 0 196px"}} 
-   label='email' 
+
    name='email'
     onChange={handleChange} 
     onBlur={handleBlur} 
@@ -116,8 +115,8 @@ label='name'
     helperText={errors.email && touched.email?errors.email:"" }
     /> 
     
-    <label style={{"transform":"translate(-300px,100px)","marginTop":"10px"}}>Password</label>
-     <TextField  style={{"width":"300px" ,"margin":"40px 0 0 196px"}}   name='password' label='password'onChange={handleChange} onBlur={handleBlur} value={values.password}  type="password" placeholder='password'
+    <label style={{"transform":"translate(-300px,105px)","marginTop":"10px"}}>Password</label>
+     <TextField  style={{"width":"300px" ,"margin":"40px 0 0 196px"}}   name='password' onChange={handleChange} onBlur={handleBlur} value={values.password}  type="password" placeholder='password'
   
     error={errors.password && touched.password}
     helperText={errors.password && touched.password?errors.password:""}   />
