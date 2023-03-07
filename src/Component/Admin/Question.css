@@ -3,6 +3,7 @@
     flex-direction: row;
     flex-wrap:nowrap ;
     margin: 102px 0 0 201px;
+    gap: 20px;
     /* align-items: center; */
     /* justify-content: center; */
 }

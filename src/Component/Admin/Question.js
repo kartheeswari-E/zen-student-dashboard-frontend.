@@ -97,11 +97,11 @@ function QuesSys({ datas }) {
     <>
       <div className="question-content">
         <p>{datas.Question}</p>
-        <div className="two-button">
+        {/* <div className="two-button">
           <button onClick={()=>navigate('/activities')} className="ques-btn">Edit </button>
 
           <button className="ques-btn">Delete</button>
-        </div>
+        </div> */}
       </div>
     </>
   );

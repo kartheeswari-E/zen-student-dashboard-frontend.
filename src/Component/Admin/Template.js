@@ -27,12 +27,12 @@ const formValidationschema = yup.object({
    
 function Template() { 
     
-    useEffect(() => {Swal.fire({
-        title:'"Email:kartheescreate@gmail.com","password":"VEK123lak@"',
-        text:"'For Your Reference only I gave the PRIVACY ',So That's why i am not giving the tap forgotpassword !!!",
-        icon: <InfoIcon/>,
-        confirmButtonText: 'Done'
-      })}, []);
+    // useEffect(() => {Swal.fire({
+    //     title:'"Email:kartheescreate@gmail.com","password":"VEK123lak@"',
+    //     text:"'For Your Reference only I gave the PRIVACY ',So That's why i am not giving the tap forgotpassword !!!",
+    //     icon: <InfoIcon/>,
+    //     confirmButtonText: 'Done'
+    //   })}, []);
     const navigate = useNavigate();
   
     const { handleChange, handleBlur, errors, touched, values, handleSubmit } =

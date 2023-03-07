@@ -45,25 +45,13 @@ function Sidebar() {
         </div>  
         <div className='list-1'>
         <div className='logos'>
-        <Devices/>
-        </div>
-        <li className='list-name'>Webkatta</li>
-        </div>
-        <div className='list-1'>
-        <div className='logos'>
         <Code/>
         </div>
         <Link to={'/codekatta'}>
         <li className='list-name'>codekatta</li></Link>
         </div>
        
-      <div className='list-1'>
-        <div className='logos'>
-        <AdminPanelSettingsIcon/>
-        </div>
-        <Link to={'/adminlogin'}>
-        <li className='list-name'>Admin Page</li></Link>
-      </div>
+     
     </ul>
 </div>
      </div>

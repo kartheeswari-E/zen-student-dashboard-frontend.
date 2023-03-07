@@ -48,10 +48,16 @@ const[data,setdata]=useState([])
         },
       }).then((res) => {
         if (res.status === 200) {
-          window.alert("sucessfull login");
+          if(values.email==="user@gmail.com"){
+window.alert("sucessfull login");
           navigate("/class");
           window.localStorage.setItem("id",values.email);
-        } else {
+          } else{
+          window.alert("sucessfull login");
+          navigate("/admin");
+          }
+        }
+        else {
           console.log(res.status);
         }
       });
