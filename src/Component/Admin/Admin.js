@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import Question from './Question'
 import Side from './Side';
+import Ques from './Ques';
 function Subnav(){
   return<>
 <div className='small-container'>
@@ -30,7 +30,7 @@ function Admin() {
 
 
   </div>
-  <Question/>
+ <Ques/>
   <Side/>
   </>
 }

@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from "react";
 import CloseIcon from "@mui/icons-material/Close";
-import Roadmaptemp from "./Roadmaptemp";
-import Navbar from "./Navbar";
+import Road from "./Road";
+import './Question.css';
 import { useNavigate } from "react-router-dom";
-import Sidebar from "./Sidebar";
+
 import { useFormik } from "formik";
 import { useParams } from "react-router-dom";
 import * as yup from "yup";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-function Classtemp() {
+function Ques() {
   useEffect(() => {
     wholedata();
     answerdata();
@@ -20,6 +20,7 @@ function Classtemp() {
   const [content3, setcontent3] = useState("No content available");
   const [content4, setcontent4] = useState("No preread available");
   const [content5, setcontent5] = useState([]);
+  const [ID, setID] = useState([]);
   const [content6, setcontent6] = useState([]);
   const [content7, setcontent7] = useState([]);
   const [content8, setcontent8] = useState([]);
@@ -87,18 +88,17 @@ function Classtemp() {
     try {
       await fetch(`${process.env.REACT_APP_BASE_URL}/userquestion/allquestion`)
         .then((data) => data.json())
-        .then((datas) => setdata(datas))
-        .then((datas) => console.log(data));
+        .then((datas) => setdata(datas));
     } catch (error) {
       console.log(error);
     }
   };
+  console.log(ID);
   let answerdata = async () => {
     try {
       await fetch(`${process.env.REACT_APP_BASE_URL}/userfirst/allanswer`)
         .then((data) => data.json())
-        .then((datass) => setfront(datass))
-        .then((datas) => console.log(front));
+        .then((datass) => setfront(datass));
     } catch (error) {
       console.log(error);
     }
@@ -106,12 +106,20 @@ function Classtemp() {
 
   return (
     <>
-      <Navbar />
       <div className="thewhole">
         <div className={link ? "active" : "class-container"}>
           <div className="first-class-container">
-            <div className="sub-class-cont">
+            <div className="sub-class-cont_admin">
+             
               <div className="rec">{content}</div>
+              {actives ? (
+               <div className="play-btn">
+                  <p onClick={() => navigate(`/admin/api/edit/${ID}`)} className="play">Edit</p>
+                 </div>    ) : (
+                ""
+              )}     
+                  
+                
               {actives ? (
                 <div className="play-btn">
                   <p
@@ -228,7 +236,7 @@ function Classtemp() {
               <div className="articles">
                 {data.map((datas, index) => {
                   return (
-                    <Roadmaptemp
+                    <Road
                       datas={datas}
                       index={index}
                       setcontent={setcontent}
@@ -237,6 +245,7 @@ function Classtemp() {
                       setcontent3={setcontent3}
                       setcontent4={setcontent4}
                       front={front}
+                      setID={setID}
                       setcontent15={setcontent15}
                       setfront1={setfront1}
                       setfront2={setfront2}
@@ -289,9 +298,8 @@ function Classtemp() {
           </div>
         </div>
       </div>
-      <Sidebar />
     </>
   );
 }
 
-export default Classtemp;
+export default Ques;

@@ -70,3 +70,28 @@ margin-left:250px;
     margin:0 0 10px 20px;
 
 }
+
+.sub-class-cont_admin {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 58px;
+    background: rgb(75,13,186);
+    color: white;
+    align-items: center;
+    /* gap: 40%; */
+    border-radius: 10px;
+}
+
+.add-movie-form{
+ 
+    display: flex;
+    flex-direction: column;
+    max-width: 650px;
+    margin: 30px auto;
+    gap: 20px;
+    }
+    label {
+      
+     margin-top:0px; 
+    }
